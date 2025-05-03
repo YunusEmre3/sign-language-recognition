@@ -1,4 +1,10 @@
 # sign-language-recognition
+
+## Credits
+
+This project was inspired by Nicholas Renotte's tutorial on sign language recognition using Mediapipe and LSTM. 
+Some parts of the original code were adapted and further developed for this project.
+
 Prototype for a sign language recognition system using Mediapipe and LSTM. Not fully functional yet; under development and open for improvements.
 
 # Sign Language Recognition with Mediapipe and LSTM
