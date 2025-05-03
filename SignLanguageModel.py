@@ -15,7 +15,7 @@ from tensorflow.keras.utils import to_categorical
 class SignLanguageModel:
     def __init__(
         self,
-        data_path="C:\\Users\\0107y\\OneDrive\\Masaüstü\\HVG\\MP_Data",
+        data_path="MP_Data",
         actions=None,
         no_sequences=30,
         sequence_length=30,
@@ -753,19 +753,23 @@ class SignLanguageModel:
 if __name__ == "__main__":
     # Example usage:
     sign_model = SignLanguageModel(
-        data_path="C:\\Users\\0107y\\OneDrive\\Masaüstü\\HVG\\try_data",
-        actions=["hello" , "thanks" , "iloveyou"],
-        no_sequences=10,       # for a quick demo
-        sequence_length=30,    # for a quick demo
-        start_folder=0
-    )
-    
+    data_path="MP_Data",
+    actions=["hello", "thanks", "iloveyou"],
+    no_sequences=10,
+    sequence_length=30,
+    start_folder=0
+)    
     # 1. Collect data (Uncomment if you want to record new data)
     #sign_model.collect_data_with_cam()
     '''
-    sign_model.collect_data_from_videos({"hello": ["C:\\Users\\0107y\\OneDrive\\Masaüstü\\merhaba1.mp4","C:\\Users\\0107y\\OneDrive\\Masaüstü\\merhaba2.mp4","C:\\Users\\0107y\\OneDrive\\Masaüstü\\HVG\\indirilen_videolar\\E\\Ebe1.mp4"],
-                                         "thanks": ["C:\\Users\\0107y\\OneDrive\\Masaüstü\\thanks1.mp4","C:\\Users\\0107y\\OneDrive\\Masaüstü\\thanks2.mp4"],
-                                         "iloveyou": ["C:\\Users\\0107y\\OneDrive\\Masaüstü\\iloveyou1.mp4","C:\\Users\\0107y\\OneDrive\\Masaüstü\\iloveyou2.mp4"]})
+  
+    sign_model.collect_data_from_videos({
+        "hello": ["MP_Data/hello/hello1.mp4", "MP_Data/hello/hello2.mp4"],
+        "thanks": ["MP_Data/thanks/thanks1.mp4", "MP_Data/thanks/thanks2.mp4"],
+        "iloveyou": ["MP_Data/iloveyou/iloveyou1.mp4", "MP_Data/iloveyou/iloveyou2.mp4"]
+    })
+
+
     '''
     #sign_model.collect_data_from_folder_auto("C:\\Users\\0107y\\OneDrive\\Masaüstü\\HVG\\indirilen_videolar_test")
     '''
@@ -789,7 +793,7 @@ if __name__ == "__main__":
     # 5. Evaluate model
     sign_model.evaluate_model()
     '''
-    sign_model.load("C:\\Users\\0107y\\Downloads\\action.h5")       # Nicholas Renotte's Model
+    sign_model.load("saved_model/action.h5")    # Nicholas Renotte's Model
 
     # 6. (Optional) Real-time test
     sign_model.real_time_test(threshold=0.5)
