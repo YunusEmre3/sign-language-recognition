@@ -18,6 +18,11 @@ This project is designed to recognize sign language gestures in real-time using 
 - LSTM deep learning model for sequence classification
 - Real-time prediction and visualization
 - Data collection tools from webcam or videos
+- 
+## Dataset Note
+
+⚠ Due to file size limitations, the full `MP_Data` directory is not included in this repository. 
+Please collect your own data using the provided collection methods or contact the maintainer for sample data.
 
 ## Usage
 
@@ -34,8 +39,3 @@ sign_model.build_model()
 sign_model.train_model(epochs=20)
 sign_model.evaluate_model()
 sign_model.real_time_test(threshold=0.5)
-
-## Dataset Note
-
-⚠ Due to file size limitations, the full `MP_Data` directory is not included in this repository. 
-Please collect your own data using the provided collection methods or contact the maintainer for sample data.
