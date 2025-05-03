@@ -1,5 +1,11 @@
 # Sign Language Recognition with Mediapipe and LSTM
 
+## Teşekkür
+
+Bu proje, Nicholas Renotte'un Mediapipe ve LSTM kullanarak işaret dili tanıma konusundaki eğitici videosundan esinlenmiştir.
+Orijinal kodun bazı bölümleri uyarlanmış ve bu projede daha da geliştirilmiştir.
+
+
 > ⚠ **Not:** Bu proje bir prototiptir ve tam olarak çalışmayabilir. Geliştirmeye açıktır.
 
 Bu proje, işaret dili hareketlerini gerçek zamanlı olarak tanımak için geliştirilmiş bir sistemdir.
