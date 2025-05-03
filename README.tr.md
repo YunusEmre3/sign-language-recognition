@@ -16,6 +16,11 @@ Bu proje, işaret dili hareketlerini gerçek zamanlı olarak tanımak için geli
 - Gerçek zamanlı tahmin
 - Kendi videolarınız veya webcam üzerinden veri toplama
 
+## Veri Seti Notu
+
+⚠ Dosya boyutu sınırlamaları nedeniyle, tam `MP_Data` klasörü bu depoda bulunmamaktadır. 
+Kod içerisindeki veri toplama yöntemlerini kullanarak kendi verinizi oluşturabilir veya örnek veri için proje sahibine ulaşabilirsiniz.
+
 ## Kullanım
 
 ```python
